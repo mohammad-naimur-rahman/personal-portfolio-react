@@ -23,7 +23,8 @@ const about = () => {
             <div className="py-3 text-center about-intro">
                 <img src={aboutPhoto} alt='aboutImage' />
                 <h3 className='primary-color-text pt-3 pb-2'>Naimur Rahman</h3>
-                <p className='secondary-color-text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A corrupti molestiae, voluptatem voluptatum dicta quae excepturi exercitationem eum, eaque reiciendis fugit repellat natus aperiam repudiandae quod omnis ducimus soluta laboriosam.</p>
+                <p className='secondary-color-text'>Naimur rahman, currently training himself aggresively himself to become a master level MERN stack devloper. Studying honours in mathematics but have passion in software development and programming.
+                </p>
                 <a href="https://drive.google.com/uc?export=download&amp;id=11sVfo3ZXbTB2OmjWcRh0AFxT8pwFQ66m" target="_blank" rel="noreferrer">
                     <button className='primary-btn'>
                         Download CV

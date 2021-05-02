@@ -8,7 +8,7 @@ const Header = () => {
                 <p className='header-left__intro'>MERN stack developer</p>
                 <h1 className='header-left__heading py-2 py-md-2'><span>Hi, I'm</span> Naimur Rahman</h1>
                 <p className='header-left__text'>
-                    Praesent sed aliquam arcu, non accumsan neque. In odio ante, vulputate ac magna vel, pharetra lobortis quam. Duis enim tortor, egestas et felis id, lobortis malesuada magna. Nunc sit amet sagittis nisi, eu semper nisl. Cras ut dictum nisl. Donec tincidunt eget orci.
+                    I am a junior full stack web developer, currently mastering MERN stack and it is also my goal. I can convert PSD to html in pixel perfection. I also love react very much and can make react application, static and dynamic application with express and mongodb. I have much knowledge in pure CSS. And also trying to become a master full stack developer.
                 </p>
                 <div className='pt-3'>
                     <a href="https://drive.google.com/uc?export=download&amp;id=11sVfo3ZXbTB2OmjWcRh0AFxT8pwFQ66m" target="_blank" rel="noreferrer">
