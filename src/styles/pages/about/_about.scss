@@ -1,0 +1,18 @@
+.about-intro {
+  max-width: 700px;
+  margin: 0 auto;
+
+  img {
+    width: 180px;
+    border-radius: 15% 0;
+    border: 5px solid var(--bg-profile);
+  }
+
+  p {
+    font-weight: 300;
+  }
+}
+
+.big {
+  font-size: 16px !important;
+}

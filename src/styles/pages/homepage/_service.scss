@@ -1,0 +1,16 @@
+.service {
+  img {
+    width: 50px;
+    display: block;
+    filter: invert(74%) sepia(0%) saturate(1517%) hue-rotate(294deg)
+      brightness(93%) contrast(81%);
+  }
+
+  h4 {
+    color: var(--text-primary);
+  }
+
+  p {
+    font-size: 15px;
+  }
+}

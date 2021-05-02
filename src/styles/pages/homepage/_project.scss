@@ -1,0 +1,36 @@
+.project-body {
+  background-color: var(--bg-profile);
+}
+
+.project {
+  &__features {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 0;
+  }
+
+  &__tool {
+    color: var(--text-primary);
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 2px;
+    background-color: var(--color-primary);
+    margin: 3px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__link {
+    display: inline-block;
+    padding-top: 10px;
+    margin: 0 5px;
+    font-size: 25px;
+    color: var(--color-primary);
+    transition: 0.3s;
+
+    &:hover {
+      color: var(--color-primary);
+      transform: translateY(-3px);
+    }
+  }
+}

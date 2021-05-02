@@ -1,0 +1,7 @@
+@mixin padding-big {
+  padding: 40px 30px;
+
+  @media (max-width: 1000px) {
+    padding: 30px 20px;
+  }
+}

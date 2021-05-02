@@ -1,0 +1,28 @@
+p,
+a,
+span {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+.primary-color-text {
+  color: var(--text-primary);
+}
+
+.secondary-color-text {
+  color: var(--text-secondary);
+}

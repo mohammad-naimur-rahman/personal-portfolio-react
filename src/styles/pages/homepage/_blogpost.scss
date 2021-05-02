@@ -1,0 +1,38 @@
+.blog-post {
+  &__inner {
+    background-color: var(--bg-secondary);
+    overflow: hidden;
+    transition: 0.3s;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+
+  a {
+    img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: cover;
+    }
+
+    h5 {
+      color: var(--text-primary);
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: currentColor;
+    }
+  }
+}
+
+.tag {
+  color: var(--text-primary);
+  font-size: 12px;
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 3px;
+  margin: 3px;
+  background-color: #4b5769;
+}

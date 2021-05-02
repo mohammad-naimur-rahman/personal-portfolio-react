@@ -1,0 +1,24 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import "../src/styles/abstract/mixins";
+@import "../src/styles/abstract/variables";
+
+@import "../src/styles/base/animation";
+@import "../src/styles/base/base";
+@import "../src/styles/base/typography";
+
+@import "../src/styles/components/components";
+
+@import "../src/styles/pages/about/about";
+
+@import "../src/styles/pages/contact/contact";
+
+@import "../src/styles/pages/homepage/blogpost";
+@import "../src/styles/pages/homepage/header";
+@import "../src/styles/pages/homepage/project";
+@import "../src/styles/pages/homepage/service";
+
+@import "../src/styles/pages/layout/layout";
+
+@import "../src/styles/pages/shared/permanentnav";
+@import "../src/styles/pages/shared/sidenav";
