@@ -5,8 +5,8 @@ import React from 'react';
 const ContactMe = () => {
     return (
         <section>
-            <div className="row" style={{ minHeight: '100vh' }}>
-                <div className="col-md-6 d-flex justify-content-center align-items-center">
+            <div className="row d-flex d-md-flex flex-column flex-md-row" style={{ minHeight: '100vh', marginTop: '70px' }}>
+                <div className="col-md-6 d-flex justify-content-center align-items-center order-1 order-md-0">
                     <div>
                         <div className='px-2 py-3'>
                             <FontAwesomeIcon className='contact-icon' icon={faUser} />
@@ -22,8 +22,8 @@ const ContactMe = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-6 d-flex justify-content-center flex-column">
-                    <form className="contact-form">
+                <div className="col-md-6 d-flex justify-content-center flex-column  order-0 order-md-1">
+                    <form className="contact-form p-4 p-md-5">
                         <h2 className='pb-2'>Send your feedback</h2>
                         <input type="text" placeholder='Your Full Name' className="contact-form__name" />
                         <input type="eamil" className='contact-form__email' placeholder='Your email' />

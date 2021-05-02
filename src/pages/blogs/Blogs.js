@@ -4,7 +4,7 @@ import BlogPost from '../homepage/BlogPost';
 
 const Blogs = () => {
     return (
-        <section className='p-2 p-md-5'>
+        <section className='p-2 p-md-5' style={{ marginTop: '70px' }}>
             <h2 className="heading">All of my blog posts</h2>
             <div className="row py-4">
                 {

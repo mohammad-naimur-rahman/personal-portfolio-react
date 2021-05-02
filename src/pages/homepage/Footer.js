@@ -37,7 +37,7 @@ export const footerLinks = [
 
 const Footer = () => {
     return (
-        <footer className='p-2 p-md-5 text-center' style={{ margin: '10px 5px', backgroundColor: 'var(--bg-profile)' }}>
+        <footer className='p-2 p-md-5 text-center'>
             <div>
                 {
                     footerLinks.map(link => <>

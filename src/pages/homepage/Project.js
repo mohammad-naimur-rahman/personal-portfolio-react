@@ -7,10 +7,10 @@ const project = ({ project }) => {
     const { screenshot, name, features, live, client, server, tools } = project;
     return (
         <div className='row my-4 px-2 py-3 project-body rounded'>
-            <div className="col-md-5">
+            <div className="col-md-6 col-lg-5">
                 <img src={screenshot} className='img-fluid' alt="" />
             </div>
-            <div className="col-md-7">
+            <div className="col-md-6 col-lg-7">
                 <div className="p-2 project">
                     <h5 className='primary-color-text project__name'>{name}</h5>
                     <p className="secondary-color-text project__features">

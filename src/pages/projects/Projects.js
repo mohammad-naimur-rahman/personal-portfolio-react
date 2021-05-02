@@ -4,7 +4,7 @@ import Project from '../homepage/Project';
 
 const Projects = () => {
     return (
-        <section className='p-2 p-md-5'>
+        <section className='p-2 p-md-5' style={{ marginTop: '70px' }}>
             <h2 className="heading">My works</h2>
             <div className="py-4">
                 {

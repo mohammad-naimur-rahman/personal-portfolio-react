@@ -1,0 +1,8 @@
+footer {
+  margin: 10px 5px;
+  background-color: var(--bg-profile);
+
+  @media (max-width: 992px) {
+    margin: 0 !important;
+  }
+}
