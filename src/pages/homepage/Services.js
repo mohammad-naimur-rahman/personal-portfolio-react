@@ -11,25 +11,25 @@ const services = [
         id: 1,
         icon: frontEnd,
         name: 'Frontend application',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eos minus dolorum iusto? Laborum molestias temporibus veritatis accusamus fuga quod ad saepe porro neque nam. Voluptas mollitia alias dicta laboriosam.'
+        description: 'I can make beautiful responsive front end application as well as landing page. I can assure to make the application pixel perfect as the design provided. I am comfortable with both with or without framework. I also use Sass to ensure efficiency and Future proof work.'
     },
     {
         id: 2,
         icon: backEnd,
         name: 'Backend application',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eos minus dolorum iusto? Laborum molestias temporibus veritatis accusamus fuga quod ad saepe porro neque nam. Voluptas mollitia alias dicta laboriosam.'
+        description: 'I also do back end using Node js, express js as backend and mongodb as database. I am comfortable with mongoose ODM. I usually work with Rest API but also known to GraphQL. I use JWT token for security reason for safe APIs.'
     },
     {
         id: 3,
         icon: reactIcon,
         name: 'React application',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eos minus dolorum iusto? Laborum molestias temporibus veritatis accusamus fuga quod ad saepe porro neque nam. Voluptas mollitia alias dicta laboriosam.'
+        description: 'I am very comfortable working with react. I know react router, various react framework like Material UI, react bootstrap, ant design etc. I am comfortable with firebase auth also. I am comfortable with context API and redux both for state management.'
     },
     {
         id: 4,
         icon: fullStack,
         name: 'Full stack application',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eos minus dolorum iusto? Laborum molestias temporibus veritatis accusamus fuga quod ad saepe porro neque nam. Voluptas mollitia alias dicta laboriosam.'
+        description: 'I can build a full stack application from sketch. The design mockup and backend features is just needed to start up. I am sure to deliver you a secured fluence full stack application. I prefer MERN stack to build a full stack application more.'
     }
 ]
 

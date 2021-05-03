@@ -34,3 +34,16 @@
     }
   }
 }
+
+.project-img-holder {
+  overflow: hidden;
+}
+
+.project-img {
+  transition: 0.8s;
+  transform: scale(1.1);
+}
+
+.project-body:hover .project-img {
+  transform: scale(1.3);
+}

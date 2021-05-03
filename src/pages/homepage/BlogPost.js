@@ -2,8 +2,9 @@ import React from 'react';
 
 const BlogPost = ({ blog }) => {
     const { img, link, title, tags } = blog;
+
     return (
-        <div className='col-md-6 blog-post'>
+        <div className='col-md-6 blog-post' data-aos='zoom-in-up'>
             <div className="m-3 blog-post__inner rounded shadow shadow-lg">
                 <a href={link} target='_blank' rel='noreferrer'>
                     <img src={img} alt="title" />

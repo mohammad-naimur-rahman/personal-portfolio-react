@@ -3,12 +3,12 @@ import { faExternalLinkAlt, faServer } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-const project = ({ project }) => {
+const Project = ({ project }) => {
     const { screenshot, name, features, live, client, server, tools } = project;
     return (
-        <div className='row my-4 px-2 py-3 project-body rounded'>
-            <div className="col-md-6 col-lg-5">
-                <img src={screenshot} className='img-fluid' alt="" />
+        <div className='row my-4 px-2 py-3 project-body rounded' data-aos="fade-up">
+            <div className="col-md-6 col-lg-5 project-img-holder">
+                <img src={screenshot} className='img-fluid project-img' alt="" />
             </div>
             <div className="col-md-6 col-lg-7">
                 <div className="p-2 project">
@@ -32,4 +32,4 @@ const project = ({ project }) => {
     );
 };
 
-export default project;
+export default Project;

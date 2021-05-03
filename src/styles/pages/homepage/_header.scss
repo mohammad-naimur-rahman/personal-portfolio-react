@@ -1,6 +1,9 @@
 header {
   min-height: 100vh;
-  padding-top: 60px;
+
+  @media (max-width: 992px) {
+    padding-top: 60px;
+  }
 }
 
 .header-left {
@@ -59,5 +62,18 @@ header {
     @media (max-width: 576px) {
       max-width: 200px;
     }
+  }
+}
+
+.slider {
+  height: 22px;
+  overflow: hidden;
+  font-size: 18px;
+
+  &-text {
+    height: 22px;
+    line-height: 20px;
+    color: var(--text-secondary);
+    animation: slide-text 7s infinite;
   }
 }

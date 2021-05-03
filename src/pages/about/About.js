@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import aboutPhoto from '../../images/about.jpg';
 
@@ -19,7 +20,11 @@ const toolsUsed = [
 
 const about = () => {
     return (
-        <section className='p-2 p-md-5' style={{ marginTop: '60px' }}>
+        <motion.section className='p-2 p-md-5 about-page'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+        >
             <div className="py-3 text-center about-intro">
                 <img src={aboutPhoto} alt='aboutImage' />
                 <h3 className='primary-color-text pt-3 pb-2'>Naimur Rahman</h3>
@@ -58,7 +63,7 @@ const about = () => {
                     }
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 

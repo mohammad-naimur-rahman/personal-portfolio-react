@@ -6,3 +6,13 @@ footer {
     margin: 0 !important;
   }
 }
+
+.footer-link {
+  transition: 0.3s;
+  color: var(--text-primary) !important;
+
+  &:hover {
+    color: var(--color-primary) !important;
+    transform: translateY(-3px);
+  }
+}
