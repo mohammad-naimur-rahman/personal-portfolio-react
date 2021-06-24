@@ -1,9 +1,16 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import { blogs } from '../homepage/Blog';
 import BlogPost from '../homepage/BlogPost';
 
 const Blogs = () => {
+
+    const location = useLocation();
+    if (location.pathname === '/blog') {
+        document.title = "Blog Posts | Naimur Rahman";
+    }
+
     return (
         <motion.section className='p-2 p-md-5 blogs-page'
             initial={{ opacity: 0 }}

@@ -4,6 +4,7 @@ import React from 'react';
 import { footerLinks } from '../homepage/Footer';
 import emailjs from 'emailjs-com';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 const ContactMe = () => {
 
@@ -17,6 +18,11 @@ const ContactMe = () => {
                 console.log(error.text);
             });
         e.target.reset();
+    }
+
+    const location = useLocation();
+    if (location.pathname === '/contact-me') {
+        document.title = "Contact me | Naimur Rahman";
     }
 
     return (

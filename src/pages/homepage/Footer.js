@@ -16,7 +16,7 @@ export const footerLinks = [
     {
         id: 3,
         icon: faTwitter,
-        link: '(https://twitter.com/your_naimur/'
+        link: 'https://twitter.com/your_naimur/'
     },
     {
         id: 4,

@@ -8,14 +8,19 @@ import Services from './Services';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 
 
 const Home = () => {
 
     useEffect(() => {
-        AOS.init({ duration: 400, offset: 100 });
+        AOS.init({ duration: 700, offset: 100 });
     }, [])
 
+    const location = useLocation();
+    if (location.pathname === '/') {
+        document.title = "Naimur Rahman | Web Developer";
+    }
     return (
         <motion.main
             initial={{ opacity: 0 }}

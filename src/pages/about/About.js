@@ -1,6 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from 'framer-motion';
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import aboutPhoto from '../../images/about.jpg';
+import { footerLinks } from '../homepage/Footer';
 
 const expertise = [
     'HTML', 'CSS', 'SCSS', 'Bootstrap', 'React', 'Material UI', 'React router'
@@ -18,7 +21,12 @@ const toolsUsed = [
     'Git', 'VS Code', 'Chrome dev tool', 'netlify', 'heroku', 'figma', 'Adobe XD', 'Postman'
 ]
 
-const about = () => {
+const About = () => {
+    const location = useLocation();
+    if (location.pathname === '/about-me') {
+        document.title = "About Me | Naimur Rahman";
+    }
+
     return (
         <motion.section className='p-2 p-md-5 about-page'
             initial={{ opacity: 0 }}
@@ -28,11 +36,20 @@ const about = () => {
             <div className="py-3 text-center about-intro">
                 <img src={aboutPhoto} alt='aboutImage' />
                 <h3 className='primary-color-text pt-3 pb-2'>Naimur Rahman</h3>
-                <p className='secondary-color-text'>Naimur rahman, currently training himself aggresively himself to become a master level MERN stack devloper. Studying honours in mathematics but have passion in software development and programming.
+                <p className='secondary-color-text'>Naimur rahman, currently training himself aggresively to become a master level MERN stack devloper. Completed honours in Mathematics but have passion in Software Development and Programming.
                 </p>
-                <a href="https://drive.google.com/uc?export=download&amp;id=11sVfo3ZXbTB2OmjWcRh0AFxT8pwFQ66m" target="_blank" rel="noreferrer">
+                <div className='py-3'>
+                    {
+                        footerLinks.map(link => <>
+                            <a href={link.link} target="_blank" rel='noreferrer' style={{ color: 'var(--color-primary)', fontSize: '24px', display: 'inline-block', padding: '10px 10px 20px 10px' }}>
+                                <FontAwesomeIcon icon={link.icon} />
+                            </a>
+                        </>)
+                    }
+                </div>
+                <a href="https://drive.google.com/uc?export=download&amp;id=1OugHV3_rAJJgvtw1SWpAxrggB6acOvYF" target="_blank" rel="noreferrer">
                     <button className='primary-btn'>
-                        Download CV
+                        Get CV
                     </button>
                 </a>
             </div>
@@ -67,4 +84,4 @@ const about = () => {
     );
 };
 
-export default about;
+export default About;

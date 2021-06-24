@@ -10,15 +10,16 @@ import { Link } from 'react-router-dom';
 export const projects = [
     {
         id: 1,
-        screenshot: restaurant,
-        name: 'Restaurant website landing page',
-        features: 'A simple fully responsive static landing page. And used no framework to design the site. All necessary features in one page',
+        screenshot: travelGuru,
+        name: 'Travel Guru full stack website',
+        features: `A MERN stack application. User can order book, admin can see all the orders, edit and delete the books and all are connected to
+            database, private route, admin panel and dynamic contect implemented, sercured admin panel`,
         tools: [
-            'HTML', 'pure CSS', 'SCSS', 'JavaScript', 'Github pages'
+            'React', 'react router', 'firebase auth', 'express', 'mongodb', 'react-bootstrap', 'heroku'
         ],
-        live: 'https://mohammad-naimur-rahman.github.io/restaurant-website/',
-        client: 'https://github.com/mohammad-naimur-rahman/restaurant-website',
-        server: ''
+        live: 'https://travel-guru-e1c27.firebaseapp.com/',
+        client: 'https://github.com/mohammad-naimur-rahman/travel-guru-fullstack-client',
+        server: 'https://github.com/mohammad-naimur-rahman/travel-guru-fullstack-server'
     },
     {
         id: 2,
@@ -35,16 +36,15 @@ export const projects = [
     },
     {
         id: 3,
-        screenshot: travelGuru,
-        name: 'Travel Guru full stack website',
-        features: `A MERN stack application. User can order book, admin can see all the orders, edit and delete the books and all are connected to
-            database, private route, admin panel and dynamic contect implemented, sercured admin panel`,
+        screenshot: restaurant,
+        name: 'Restaurant website landing page',
+        features: 'A simple fully responsive static landing page. And used no framework to design the site. All necessary features in one page',
         tools: [
-            'React', 'react router', 'firebase auth', 'express', 'mongodb', 'react-bootstrap', 'heroku'
+            'HTML', 'pure CSS', 'SCSS', 'JavaScript', 'Github pages'
         ],
-        live: 'https://travel-guru-e1c27.firebaseapp.com/',
-        client: 'https://github.com/mohammad-naimur-rahman/travel-guru-fullstack-client',
-        server: 'https://github.com/mohammad-naimur-rahman/travel-guru-fullstack-server'
+        live: 'https://mohammad-naimur-rahman.github.io/restaurant-website/',
+        client: 'https://github.com/mohammad-naimur-rahman/restaurant-website',
+        server: ''
     },
     {
         id: 4,
