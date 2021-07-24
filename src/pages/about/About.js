@@ -6,7 +6,7 @@ import aboutPhoto from '../../images/about.jpg';
 import { footerLinks } from '../homepage/Footer';
 
 const expertise = [
-    'HTML', 'CSS', 'SCSS', 'Bootstrap', 'React', 'Material UI', 'React router'
+    'HTML', 'CSS', 'SCSS', 'Bootstrap', 'React', 'Material UI', 'React router', 'Vue JS', 'Next JS'
 ]
 
 const comfortable = [
