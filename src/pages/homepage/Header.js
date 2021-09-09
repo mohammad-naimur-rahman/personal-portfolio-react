@@ -9,10 +9,10 @@ const Header = () => {
     return (
         <header className='row d-flex d-lg-flex flex-column flex-lg-row'>
             <div className="col-lg-7 header-left d-flex flex-column justify-content-center p-4 p-md-5 order-1 order-lg-0" data-aos='fade-up'>
-                <div class="slider">
-                    <div class="slider-text">Full stack devloper</div>
-                    <div class="slider-text">React Developer</div>
-                    <div class="slider-text">MERN stack developer</div>
+                <div className="slider">
+                    <div className="slider-text">Full stack devloper</div>
+                    <div className="slider-text">React Developer</div>
+                    <div className="slider-text">MERN stack developer</div>
                 </div>
                 <h1 className='header-left__heading py-2 py-md-2'><span>Hi, I'm</span> Naimur Rahman</h1>
                 <p className='header-left__text'>
