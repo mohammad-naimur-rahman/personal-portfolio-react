@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { blogs } from "../homepage/Blog";
 import BlogPost from "../homepage/BlogPost";
 import { useQuery } from "react-query";
 import { API_URL } from "../../configs";
