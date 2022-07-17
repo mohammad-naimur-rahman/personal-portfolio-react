@@ -10,6 +10,7 @@ import PermanentNav from "./pages/Shared/PermanentNav";
 import { AnimatePresence } from "framer-motion";
 import { QueryClientProvider, QueryClient } from "react-query";
 import BlogRedirect from "./pages/BlogRedirect";
+import SingleBlog from "./pages/homepage/SingleBlog";
 
 function App() {
   const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ function App() {
               <Route path="/projects" component={Projects} />
               <Route path="/blog" component={Blogs} />
               <Route path="/blogs" component={BlogRedirect} />
+              <Route path="/blogpost/:slug" component={SingleBlog} />
               <Route path="/contact-me" component={ContactMe} />
             </HomeLayout>
           </Switch>
