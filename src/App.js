@@ -12,9 +12,13 @@ import Blogs from './pages/blogs/Blogs';
 import ContactMe from './pages/contactMe/ContactMe';
 import PermanentNav from './pages/Shared/PermanentNav';
 import { AnimatePresence } from 'framer-motion';
+import { QueryClientProvider, QueryClient } from 'react-query'
+import BlogRedirect from './pages/BlogRedirect';
 
 function App() {
+  const queryClient = new QueryClient()
   return (
+    <QueryClientProvider client={queryClient}>
     <Router>
       <PermanentNav />
       <AnimatePresence>
@@ -24,11 +28,13 @@ function App() {
             <Route path='/about-me' component={About} />
             <Route path='/projects' component={Projects} />
             <Route path='/blog' component={Blogs} />
+            <Route path='/blogs' component={BlogRedirect} />  
             <Route path='/contact-me' component={ContactMe} />
           </HomeLayout>
         </Switch>
       </AnimatePresence>
-    </Router>
+      </Router>
+    </QueryClientProvider>
   );
 }
 

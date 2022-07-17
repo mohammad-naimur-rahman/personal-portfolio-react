@@ -17,6 +17,10 @@ const Home = () => {
         AOS.init({ duration: 700, offset: 100 });
     }, [])
 
+    useEffect(() => {
+        
+    }, [])
+
     const location = useLocation();
     if (location.pathname === '/') {
         document.title = "Naimur Rahman | Web Developer";
