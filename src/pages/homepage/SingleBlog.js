@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { API_URL } from "../../configs";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -55,6 +55,9 @@ const SingleBlog = () => {
           },
         }}
       />
+      <Link to="/blog">
+        <button className="btn btn-primary mt-2">&larr; All Blogs</button>
+      </Link>
     </div>
   );
 };
