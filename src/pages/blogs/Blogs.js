@@ -11,11 +11,7 @@ const Blogs = () => {
     document.title = "Blog Posts | Naimur Rahman";
   }
 
-  const { isLoading, data } = useQuery("blogs", () => fetch(`${API_URL}/blogs?populate=*`).then((res) => res.json()));
-
-  if (isLoading) {
-    return <p>Loading...</p>;
-  }
+  const { data } = useQuery("blogs", () => fetch(`${API_URL}/blogs?populate=*`).then((res) => res.json()));
 
   return (
     <motion.section
