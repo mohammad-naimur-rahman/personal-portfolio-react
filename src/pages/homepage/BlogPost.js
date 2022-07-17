@@ -1,25 +1,30 @@
-import React from 'react';
-
+import React from "react";
+import { Link } from "react-router-dom";
 const BlogPost = ({ blog }) => {
-    const { img, link, title, tags } = blog;
+  const { cover, title, tags, slug } = blog?.attributes;
+  const { name, url } = cover.data.attributes.formats.small;
 
-    return (
-        <div className='col-md-6 blog-post' data-aos='zoom-in-up'>
-            <div className="m-3 blog-post__inner rounded shadow shadow-lg">
-                <a href={link} target='_blank' rel='noreferrer'>
-                    <img src={img} alt="title" />
-                    <div className="p-3">
-                        <h5 className='py-2'>{title}</h5>
-                        <div className="d-block">
-                            {
-                                tags.map(tag => <span className='tag'>{tag}</span>)
-                            }
-                        </div>
-                    </div>
-                </a>
-            </div>
+  return (
+    <div className="col-md-6">
+      <div className="m-3 blog-post">
+        <img src={url} alt={name} />
+        <div className="p-2">
+          <Link to={`/blogpost/${slug}`}>
+            <h5>{title}</h5>
+          </Link>
+          {tags ? (
+            <>
+              {tags.map((tag) => (
+                <span className="tag" key={tag}>
+                  {tag}
+                </span>
+              ))}
+            </>
+          ) : null}
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default BlogPost;
