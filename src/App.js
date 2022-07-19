@@ -24,9 +24,9 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route path="/about-me" component={About} />
               <Route path="/projects" component={Projects} />
-              <Route path="/blog" component={Blogs} />
-              <Route path="/blogs" component={BlogRedirect} />
-              <Route path="/blogpost/:slug" component={SingleBlog} />
+              <Route path="/blog-post/:slug" component={SingleBlog} />
+              <Route path="/blogs" component={Blogs} />
+              <Route path="/blog" component={BlogRedirect} />
               <Route path="/contact-me" component={ContactMe} />
             </HomeLayout>
           </Switch>

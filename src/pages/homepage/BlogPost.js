@@ -7,21 +7,21 @@ const BlogPost = ({ blog }) => {
   return (
     <div className="col-md-6">
       <div className="m-3 blog-post">
-        <img src={url} alt={name} />
-        <div className="p-2">
-          <Link to={`/blogpost/${slug}`}>
+        <Link to={`/blog-post/${slug}`}>
+          <img src={url} alt={name} />
+          <div className="p-2">
             <h5>{title}</h5>
-          </Link>
-          {tags ? (
-            <>
-              {tags.map((tag) => (
-                <span className="tag" key={tag}>
-                  {tag}
-                </span>
-              ))}
-            </>
-          ) : null}
-        </div>
+            {tags ? (
+              <>
+                {tags.map((tag) => (
+                  <span className="tag" key={tag}>
+                    {tag}
+                  </span>
+                ))}
+              </>
+            ) : null}
+          </div>
+        </Link>
       </div>
     </div>
   );
