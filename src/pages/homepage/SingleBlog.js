@@ -9,16 +9,27 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 const SingleBlog = () => {
   const { slug } = useParams();
   const [blogpost, setblogpost] = useState({});
+  const [isLoading, setisLoading] = useState(false);
 
   const { title, tags, post } = blogpost;
 
   useEffect(() => {
+    setisLoading(true);
     fetch(`${API_URL}/blogs?filters[slug]=${slug}`)
       .then((res) => res.json())
       .then((data) => {
         setblogpost(data.data[0].attributes);
+        setisLoading(false);
+      })
+      .catch((err) => {
+        setisLoading(false);
+        console.log(err.message);
       });
   }, [slug]);
+
+  if (isLoading) {
+    return <h4 className="mt-5 pt-5 text-center">Post loading, Please wait...</h4>;
+  }
 
   return (
     <div className="single-blog">

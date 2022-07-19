@@ -5,6 +5,7 @@
   background-color: var(--bg-secondary);
   height: calc(100vh - 20px);
   width: 320px;
+  overflow-y: auto;
 
   @media (max-width: 1200px) {
     width: 280px;

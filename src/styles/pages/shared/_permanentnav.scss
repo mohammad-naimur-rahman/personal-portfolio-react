@@ -13,10 +13,6 @@
   }
 }
 
-#check:checked + .side-permanent-nav {
-  transform: translateX(0);
-}
-
 .nav-heading {
   line-height: 50px;
 }
@@ -122,4 +118,8 @@
       }
     }
   }
+}
+
+.side-nav-open {
+  transform: translateX(0);
 }
