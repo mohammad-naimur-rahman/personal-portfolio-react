@@ -5,8 +5,8 @@ const BlogRedirect = () => {
     window.location = "https://naimur-portfolio-blog.herokuapp.com/admin/content-manager";
   }, []);
   return (
-    <div>
-      <h1>This is blog</h1>
+    <div className="text-center pt-5 mt-5">
+      <h3>Redirecting to strapi blog admin...</h3>
     </div>
   );
 };
