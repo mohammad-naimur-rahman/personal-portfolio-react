@@ -66,7 +66,7 @@ const SingleBlog = () => {
           },
         }}
       />
-      <Link to="/blog">
+      <Link to="/blogs">
         <button className="btn btn-primary mt-2">&larr; All Blogs</button>
       </Link>
     </div>
