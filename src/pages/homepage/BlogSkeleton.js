@@ -1,19 +1,30 @@
 import React from "react";
-import grayImg from "../../images/grey-img.png";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const BlogSkeleton = () => {
   return (
     <div className="col-md-6">
       <div className="m-3 blog-skeleton">
-        <img src={grayImg} alt="blog post" />
+        <Skeleton duration={2.2} baseColor="rgba(0,0,0,0.4)" highlightColor="rgba(255,255,255,0.4)" className="img" />
         <div className="p-2">
-          <div className="title">
-            <div className="skeleton-el"></div>
-          </div>
+          <Skeleton
+            duration={2.2}
+            width="100%"
+            height="50px"
+            baseColor="rgba(0,0,0,0.4)"
+            highlightColor="rgba(255,255,255,0.4)"
+          />
           {[0, 1, 2].map((el) => (
-            <span key={el} className="tag">
-              <div className="skeleton-el2"></div>
-            </span>
+            <Skeleton
+              duration={2.2}
+              key={el}
+              inline={true}
+              baseColor="rgba(0,0,0,0.4)"
+              highlightColor="rgba(255,255,255,0.4)"
+              width="60px"
+              height="25px"
+            />
           ))}
         </div>
       </div>
