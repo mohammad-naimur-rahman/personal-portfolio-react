@@ -18,6 +18,7 @@ const BlogSkeleton = () => {
           {[0, 1, 2].map((el) => (
             <Skeleton
               duration={2.2}
+              style={{ margin: "5px" }}
               key={el}
               inline={true}
               baseColor="rgba(0,0,0,0.4)"

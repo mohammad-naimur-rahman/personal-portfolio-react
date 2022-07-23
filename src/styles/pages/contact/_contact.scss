@@ -18,10 +18,9 @@
     margin: 7px 0;
     outline: none;
     border: 2px solid var(--color-primary);
-    transition: 0.3s;
 
     &:focus {
-      border: 3px solid var(--color-primary);
+      border: 2px solid var(--color-green);
     }
   }
 
